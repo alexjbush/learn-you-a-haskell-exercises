@@ -1,0 +1,24 @@
+name:                learn-you-a-haskell-exercises
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/alexjbush/learn-you-a-haskell-exercises#readme
+license:             GPL3
+author:              Alex Bush
+copyright:           2018 Alex Bush
+extra-source-files:
+- README
+
+dependencies:
+  - base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+tests:
+  learn-you-a-haskell-exercises-test:
+    main:                Spec.hs
+    source-dirs:         test
+    dependencies:
+    - learn-you-a-haskell-exercises
+    - hspec

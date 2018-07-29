@@ -1,3 +1,16 @@
+module StartingOut
+  ( penultimate
+  , findK
+  , isPalindrome
+  , duplicate
+  , ziplike
+  , splitAtIndex
+  , dropK
+  , slice
+  , insertElem
+  , rotate
+  ) where
+
 {-
  -Once you've installed Haskell from http://www.haskell.org/platform/, load the interpreter with the command ghci.
  -
