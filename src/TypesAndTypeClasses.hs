@@ -1,3 +1,10 @@
+module TypesAndTypeClasses
+  ( Colour
+  , firstColour
+  , reverseColourOrder
+  , paintMix
+  ) where
+
 {-
  - For this exercise, we are dealing with a type for colours of the rainbow
  - The typeclass is defined here, and note its English spelling.
@@ -6,15 +13,21 @@
  -
  - Have a play with the Colour in ghci, try the succ and pred functions and so on.
  -}
-data Colour = Red | Orange | Yellow | Green | Blue | Indigo | Violet
-    deriving (Eq, Ord, Show, Bounded, Enum)   
+data Colour
+  = Red
+  | Orange
+  | Yellow
+  | Green
+  | Blue
+  | Indigo
+  | Violet
+  deriving (Eq, Ord, Show, Bounded, Enum)
 
 {-
  - Again, you should be able to write these functions in one line, 
  - using the information from the chapter http://learnyouahaskell.com/types-and-typeclasses
  - and the chapter before
  -}
-
 {-
  - The Colour typeclass is of type Ord
  - What is the "first" (or least) colour
