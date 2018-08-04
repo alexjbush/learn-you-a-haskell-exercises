@@ -1,5 +1,5 @@
 module TypesAndTypeClasses
-  ( Colour
+  ( Colour(..)
   , firstColour
   , reverseColourOrder
   , paintMix

@@ -7,7 +7,7 @@ license:             GPL3
 author:              Alex Bush
 copyright:           2018 Alex Bush
 extra-source-files:
-- README
+- README.md
 
 dependencies:
   - base >= 4.7 && < 5

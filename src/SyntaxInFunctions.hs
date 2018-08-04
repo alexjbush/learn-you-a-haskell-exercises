@@ -1,3 +1,9 @@
+module SyntaxInFunctions
+  ( englishDigit
+  , divTuple
+  , threeZeroList
+  ) where
+
 -- This function should print a single digit number as English text, or "unknown" if it's out of the range 0-9
 englishDigit :: Int -> String
 englishDigit x = undefined
