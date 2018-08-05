@@ -1,7 +1,7 @@
-module TypesAndTypeClassesSpec where
+module TypesAndTypeclassesSpec where
 
 import           Test.Hspec
-import           TypesAndTypeClasses
+import           TypesAndTypeclasses
 
 spec :: Spec
 spec = do

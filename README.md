@@ -8,6 +8,18 @@ The exercises were taken from [noelmarkham/learn-you-a-haskell-exercises](https:
 
 I'll welcome any PRs for additional or improved exercises and tests :)
 
+## Chapters
+
+**[Book Chapter](https://nostarch.com/lyah.htm#content)**|**[Online Chapter](http://learnyouahaskell.com/chapters)**|**Exercise File**|**Test File**
+:-----:|:-----:|:-----:|:------:
+1. Starting Out|[2. Starting out](http://learnyouahaskell.com/starting-out)|[`StartingOut.hs`](src/StartingOut.hs)|[`StartingOutSpec.hs`](test/StartingOutSpec.hs)
+2. Believe the Type|[3. Types and Typeclasses](http://learnyouahaskell.com/types-and-typeclasses)|[`TypesAndTypeclasses.hs`](src/TypesAndTypeclasses.hs)|[`TypesAndTypeclassesSpec.hs`](test/TypesAndTypeclassesSpec.hs)
+3. Syntax in Functions|[4. Syntax in Functions](http://learnyouahaskell.com/syntax-in-functions)|[`SyntaxInFunctions.hs`](src/SyntaxInFunctions.hs)|[`SyntaxInFunctionsSpec.hs`](test/SyntaxInFunctionsSpec.hs)
+
+## Running
+
+You can load the project in GHCi by running `stack ghci` in the project root. This will load all source modules by default. You can reload the modules after you make changes by running `:reload` in the GHCi prompt.
+
 ## Testing
 
 All exercises should have associated `hspec` tests, and you can run all the tests through `stack` by running: `stack test`.

@@ -1,4 +1,4 @@
-module TypesAndTypeClasses
+module TypesAndTypeclasses
   ( Colour(..)
   , firstColour
   , reverseColourOrder
