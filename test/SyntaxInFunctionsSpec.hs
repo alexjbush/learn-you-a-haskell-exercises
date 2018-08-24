@@ -15,7 +15,7 @@ spec = do
   	it "divide 4 by 2" $ do
   	  divTuple (4, 2) `shouldBe` 2
   	it "divide by zero is undefined" $ do
-  	  evaluate (divTuple (4, 0)) `shouldThrow` anyArithException
+  	  evaluate (divTuple (4, 0)) `shouldThrow` errorCall "Prelude.undefined"
   describe "threeZeroList" $ do
   	it "return true if passed a list starting with three zeros" $ do
   	  threeZeroList [0, 0, 0, 2] `shouldBe` True
