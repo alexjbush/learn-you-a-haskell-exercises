@@ -1,3 +1,14 @@
+module HigherOrderFunctions
+  ( sumInts
+  , sq
+  , sumSquares
+  , higherOrderSum
+  , hoSumSquares
+  , hoSumInts
+  , higherOrderSequenceApplication
+  , hoFactorial
+  ) where
+
 -- Sum the numbers between two inclusive values recursively, assuming a < b when the function is first called
 -- Example: sumInts 0 1 = 1
 --          sumInts 1 3 = 6
