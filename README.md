@@ -15,6 +15,8 @@ I'll welcome any PRs for additional or improved exercises and tests :)
 1\. Starting Out | [2\. Starting out](http://learnyouahaskell.com/starting-out) | [`StartingOut.hs`](src/StartingOut.hs) | [`StartingOutSpec.hs`](test/StartingOutSpec.hs)
 2\. Believe the Type | [3\. Types and Typeclasses](http://learnyouahaskell.com/types-and-typeclasses) | [`TypesAndTypeclasses.hs`](src/TypesAndTypeclasses.hs) | [`TypesAndTypeclassesSpec.hs`](test/TypesAndTypeclassesSpec.hs)
 3\. Syntax in Functions | [4\. Syntax in Functions](http://learnyouahaskell.com/syntax-in-functions) | [`SyntaxInFunctions.hs`](src/SyntaxInFunctions.hs) | [`SyntaxInFunctionsSpec.hs`](test/SyntaxInFunctionsSpec.hs)
+4\. Hello Recursion! | [5\. Syntax in Functions](http://learnyouahaskell.com/recursion) | [`Recursion.hs`](src/Recursion.hs) | [`RecursionSpec.hs`](test/RecursionSpec.hs)
+5\. Higher-Order Functions | [6\. Higher Order Functions](http://learnyouahaskell.com/higher-order-functions) | [`HigherOrderFunctions.hs`](src/HigherOrderFunctions.hs) | [`HigherOrderFunctionsSpec.hs`](test/HigherOrderFunctionsSpec.hs)
 
 ## Running
 
