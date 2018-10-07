@@ -17,10 +17,15 @@ I'll welcome any PRs for additional or improved exercises and tests :)
 3\. Syntax in Functions | [4\. Syntax in Functions](http://learnyouahaskell.com/syntax-in-functions) | [`SyntaxInFunctions.hs`](src/SyntaxInFunctions.hs) | [`SyntaxInFunctionsSpec.hs`](test/SyntaxInFunctionsSpec.hs)
 4\. Hello Recursion! | [5\. Syntax in Functions](http://learnyouahaskell.com/recursion) | [`Recursion.hs`](src/Recursion.hs) | [`RecursionSpec.hs`](test/RecursionSpec.hs)
 5\. Higher-Order Functions | [6\. Higher Order Functions](http://learnyouahaskell.com/higher-order-functions) | [`HigherOrderFunctions.hs`](src/HigherOrderFunctions.hs) | [`HigherOrderFunctionsSpec.hs`](test/HigherOrderFunctionsSpec.hs)
+6\. Modules | [7\. Modules](http://learnyouahaskell.com/modules) | [`Modules.hs`](src/Modules.hs) | [`ModulesSpec.hs`](test/ModulesSpec.hs)
+7\. Making Our Own Types And Type Classes | [8\. Making Our Own Types And Typeclasses](http://learnyouahaskell.com/making-our-own-types-and-typeclasses) | [`MakingOurOwnTypesAndTypeclasses.hs`](src/MakingOurOwnTypesAndTypeclasses.hs) | [`MakingOurOwnTypesAndTypeclassesSpec.hs`](test/MakingOurOwnTypesAndTypeclassesSpec.hs)
+8\. & 9\. Input And Output & More Input And More Output | [9\. Input And Output](http://learnyouahaskell.com/input-and-output) | [`app/InputAndOutput.hs`](app/InputAndOutput.hs) & [`src/InputAndOutput.hs`](src/InputAndOutput.hs) | [`InputAndOutputSpec.hs`](test/InputAndOutputSpec.hs)
 
 ## Running
 
 You can load the project in GHCi by running `stack ghci` in the project root. This will load all source modules by default. You can reload the modules after you make changes by running `:reload` in the GHCi prompt.
+
+For **Input And Output** module you can run `stack exec InputAndOutput` to execute the `Main`.
 
 ## Testing
 
