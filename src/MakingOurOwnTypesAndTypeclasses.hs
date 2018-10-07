@@ -3,6 +3,9 @@ module MakingOurOwnTypesAndTypeclasses
   , Digit(..)
   , Suit(..)
   , Coin(..)
+  , betterCard
+  , play
+  , Hand
   ) where
 
 {-
