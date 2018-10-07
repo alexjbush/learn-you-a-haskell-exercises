@@ -20,6 +20,9 @@ module MakingOurOwnTypesAndTypeclasses
  - When displaying the Card instance in GHCI, or calling show (Card digit suit), the String which should be displayed is "The <Digit> of <Suit>"
  -
  - Complete the implementation of the following declarations, and provide an implementation for instance Show Card
+ -
+ - NOTE: The tests for this module are commented out to allow the module to compile.
+ - Please uncomment them to enable the tests.
  -}
 data Suit
 
