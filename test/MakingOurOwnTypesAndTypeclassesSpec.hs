@@ -14,5 +14,7 @@ spec = do
       play ([minBound .. maxBound] :: [Card]) `shouldBe` True
     it "An empty hand should give false" $ play ([] :: [Card]) `shouldBe` False
     it "A hand of just the maximum card should give false" $ play ([maxBound :: Card] :: [Card]) `shouldBe` False
-
--- test for heads/tails
+  describe "Hand for Coin" $ do
+    it "An empty hand should give false" $ play ([] :: [Coin]) `shouldBe` False
+    it "A hand of ten of all coins should give true" $
+      play (concatMap (replicate 10) ([minBound ..] :: [Coin])) `shouldBe` True

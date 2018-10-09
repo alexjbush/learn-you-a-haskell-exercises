@@ -53,7 +53,7 @@ instance Hand Card where
   play = any (\ h -> h == Card Spades Ace)
 
 -- Create a new Coin type by completing the implementation
-data Coin = Head | Tail deriving (Show, Eq, Enum)
+data Coin = Head | Tail deriving (Show, Eq, Enum, Bounded)
 
 -- Implement Hand for Coin, where play returns true if there are ten heads in a row in the list
 instance Hand Coin where
