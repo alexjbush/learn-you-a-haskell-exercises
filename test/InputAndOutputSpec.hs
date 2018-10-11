@@ -7,4 +7,5 @@ import           Test.Hspec
 spec :: Spec
 spec =
   describe "lottery" $
-  it "Should generate the same random numbers given the same seed" $ take 5 (lottery (mkStdGen 1)) `shouldBe` []
+  it "Should generate the same random numbers given the same seed" $
+  lottery (mkStdGen 1) `shouldBe` [38, 41, 28, 11, 22, 4]

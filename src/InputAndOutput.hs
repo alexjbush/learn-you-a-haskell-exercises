@@ -6,4 +6,4 @@ import System.Random
  - This function should take a StdGen instance, and produce a list of six unique numbers between 1 and 49, in numerical order
  -}
 lottery :: StdGen -> [Int]
-lottery gen = undefined
+lottery = take 6 . randomRs (1, 49)
