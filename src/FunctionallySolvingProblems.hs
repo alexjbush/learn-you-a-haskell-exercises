@@ -27,7 +27,7 @@ type Pivot a = [a] -> (a, [a])
   Note: It should remove the pivot element from the returned list
   -}
 headAsPivot :: (Ord a) => Pivot a
-headAsPivot (h:t) = (h, t)
+headAsPivot = undefined
 
 {-|
   Implement a function that takes a pivot-choosing function and a list and
@@ -35,11 +35,7 @@ headAsPivot (h:t) = (h, t)
   the pivot element and all the elements greater than the chosen pivot
   -}
 splitAtPivot :: (Ord a) => Pivot a -> [a] -> ([a], a, [a])
-splitAtPivot f l = (low, pivot, high)
-  where
-    (pivot, remainder) = f l
-    pred x = x <= pivot
-    (low, high) = partition pred remainder
+splitAtPivot = undefined
 
 {-|
   Implement the main body of the Quicksort function. It should take a pivot function and a list
@@ -48,9 +44,4 @@ splitAtPivot f l = (low, pivot, high)
   of the split lists.
   -}
 quicksort :: (Ord a) => Pivot a -> [a] -> [a]
-quicksort p l@(_:_:_) = sortedLower ++ [pivot] ++ sortedHigher
-  where
-    (lower, pivot, higher) = splitAtPivot p l
-    sortedLower = quicksort p lower
-    sortedHigher = quicksort p higher
-quicksort _ l = l
+quicksort = undefined
