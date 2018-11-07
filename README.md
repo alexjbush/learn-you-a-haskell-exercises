@@ -21,6 +21,7 @@ I'll welcome any PRs for additional or improved exercises and tests :)
 7\. Making Our Own Types And Type Classes | [8\. Making Our Own Types And Typeclasses](http://learnyouahaskell.com/making-our-own-types-and-typeclasses) | [`MakingOurOwnTypesAndTypeclasses.hs`](src/MakingOurOwnTypesAndTypeclasses.hs) | [`MakingOurOwnTypesAndTypeclassesSpec.hs`](test/MakingOurOwnTypesAndTypeclassesSpec.hs)
 8\. & 9\. Input And Output & More Input And More Output | [9\. Input And Output](http://learnyouahaskell.com/input-and-output) | [`app/InputAndOutput.hs`](app/InputAndOutput.hs) & [`src/InputAndOutput.hs`](src/InputAndOutput.hs) | [`InputAndOutputSpec.hs`](test/InputAndOutputSpec.hs)
 10\. Functionally Solving Problems | [10\. Functionally Solving Problems](http://learnyouahaskell.com/functionally-solving-problems) | [`FunctionallySolvingProblems.hs`](src/FunctionallySolvingProblems.hs) | [`FunctionallySolvingProblemsSpec.hs`](test/FunctionallySolvingProblemsSpec.hs)
+11\. Applicative Functors & 12. Monoids | [11\. Functors, Applicative Functors and Monoids](http://learnyouahaskell.com/functors-applicative-functors-and-monoids) | [`FunctorsApplicativeFunctorsAndMonoids.hs`](src/FunctorsApplicativeFunctorsAndMonoids.hs) | [`FunctorsApplicativeFunctorsAndMonoidsSpec.hs`](test/FunctorsApplicativeFunctorsAndMonoidsSpec.hs)
 
 ## Running
 

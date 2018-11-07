@@ -1,18 +1,26 @@
+module FunctorsApplicativeFunctorsAndMonoids
+(List(..),
+combineLists)
+where
+
 import Control.Applicative
 import Data.Monoid
 
 -- We can use the following type to simulate our own list
-data List a = Empty | Value a (List a) deriving (Show)
+data List a = Empty | Value a (List a) deriving (Show, Eq)
 
--- Make the list a Functor
+-- Complete the instance definition of Functor for List
+instance Functor List
 
 -- Write a function which appends one list on to another
 combineLists:: List a -> List a -> List a
 combineLists a b = undefined
 
--- Make our list a Monoid
+-- Complete the instance definition of Applicative for List
+instance Applicative List
 
--- Make our list an Applicative
+-- Complete the instance definition of Monoid for List
+instance Monoid a => Monoid (List a)
 
 -- Make sure that the List obeys the laws for Applicative and Monoid
 
