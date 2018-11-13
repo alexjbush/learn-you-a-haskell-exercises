@@ -20,7 +20,7 @@ combineLists a b = undefined
 instance Applicative List
 
 -- Complete the instance definition of Monoid for List
-instance Monoid a => Monoid (List a)
+instance Monoid (List a)
 
 -- Make sure that the List obeys the laws for Applicative and Monoid
 

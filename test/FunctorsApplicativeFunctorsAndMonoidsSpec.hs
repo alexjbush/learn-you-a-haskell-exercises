@@ -22,7 +22,27 @@ spec = do
       let v = Value 1 Empty
       pure id <*> v `shouldBe` v
     it "second applicative law" $ do
-          let v = Value 5 $ Value 3 Empty
-              u = Value 1 Empty
-              w = Value 9 Empty
-          pure (.) <*> u <*> v <*> w `shouldBe` u <*> (v <*> w)
+      let u = Value (2+) $ Value (3+) Empty :: List (Int -> Int)
+          v = Value (1+) Empty :: List (Int -> Int)
+          w = Value 9 Empty
+      pure (.) <*> u <*> v <*> w `shouldBe` u <*> (v <*> w)
+    it "third applicative law" $ do
+      let f = (10+) :: Int -> Int
+          x = 1
+          fromPure :: a -> List a
+          fromPure = pure
+      fromPure f <*> fromPure x `shouldBe` fromPure (f x)
+    it "fourth applicative law" $ do
+      let u = Value (1+) Empty :: List (Int -> Int)
+          y = 1 :: Int
+      u <*> pure y `shouldBe` pure ($ y) <*> u
+  describe "Monoid List" $ do
+    it "mappend of two lists should concatinate them" $ do
+      let v1 = Value 1 Empty :: List Int
+          v2 = Value 2 ( Value 3 Empty) :: List Int
+          r = Value 1 ( Value 2 ( Value 3 Empty)) :: List Int
+      v1 `mappend` v2  `shouldBe` r
+    it "mempty of a list should be Empty" $ do
+      let e = mempty :: List Int
+      e `shouldBe` Empty
+    -- Monoid laws
