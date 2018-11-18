@@ -45,4 +45,14 @@ spec = do
     it "mempty of a list should be Empty" $ do
       let e = mempty :: List Int
       e `shouldBe` Empty
-    -- Monoid laws
+    it "first monoid law" $ do
+      let x = Value 1 Empty :: List Int
+      mempty `mappend` x `shouldBe` x
+    it "second monoid law" $ do
+      let x = Value 1 Empty :: List Int
+      x `mappend` mempty `shouldBe` x
+    it "third monoid law" $ do
+      let x = Value 2 $ Value 3 Empty :: List Int
+          y = Value 1 Empty :: List Int
+          z = Value 9 Empty :: List Int
+      ((x `mappend` y) `mappend` z) `shouldBe` (x `mappend` (y `mappend` z))

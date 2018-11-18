@@ -24,14 +24,28 @@ instance Monoid (List a)
 
 -- Make sure that the List obeys the laws for Applicative and Monoid
 
--- Create some lists of numbers of different lengths such as:
-twoValueList = Value 10 $ Value 20 Empty
+-- Create two lists:
+-- oneToFive that represents [1,2,3,4,5] using your list implementation
+oneToFive :: Num a => List a
+oneToFive = undefined
 
--- Use <$> on the lists with a single-parameter function, such as:
-plusTwo = (+2)
+-- threeToOne that represents [3,2,1] using your list implementation
+threeToOne :: Num a => List a
+threeToOne = undefined
 
--- Use <$> and <*> on the lists with a binary function
+-- Create a function using <$> that applies a function to all elements of the list
+applyFunToList :: (a -> b) -> List a -> List b
+applyFunToList = undefined
 
--- Create some lists of binary functions
+-- Create a function using <$> and <*> that applies a binary function between all elements of two lists
+applyBinFunBetweenLists :: (a -> b -> c) -> List a -> List b -> List c
+applyBinFunBetweenLists = undefined
 
--- Use <*> on the binary functions list and the number lists
+-- Create a list of binary functions that represent [(+),(*),(^)] using your list implementation
+binaryFunctionList :: Num a => List (a -> a -> a)
+binaryFunctionList = undefined
+
+-- Create a function that applies a list of binary functions between all combinations of two lists
+applyBinaryFunctions :: List (a -> b -> c) -> List a -> List b -> List c
+applyBinaryFunctions = undefined
+
