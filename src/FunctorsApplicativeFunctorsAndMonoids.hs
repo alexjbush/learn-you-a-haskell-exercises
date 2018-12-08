@@ -1,6 +1,12 @@
 module FunctorsApplicativeFunctorsAndMonoids
 (List(..),
-combineLists)
+ combineLists,
+ oneToFive,
+ threeToOne,
+ applyFunToList,
+ applyBinFunBetweenLists,
+ binaryFunctionList,
+ applyBinaryFunctions)
 where
 
 import Control.Applicative

@@ -56,3 +56,10 @@ spec = do
           y = Value 1 Empty :: List Int
           z = Value 9 Empty :: List Int
       ((x `mappend` y) `mappend` z) `shouldBe` (x `mappend` (y `mappend` z))
+  describe "Working with List" $ do
+    it "List of 1 to 5" $ do
+      oneToFive `shouldBe` (Value 1 $ Value 2 $ Value 3 $ Value 4 $ Value 5 Empty)
+    it "List of 3 to 1" $ do
+      threeToOne `shouldBe` (Value 3 $ Value 2 $ Value 1 Empty)
+    it "List num to str" $ do
+      applyFunToList (show) threeToOne `shouldBe` (Value "3" $ Value "2" $ Value "1" Empty)
